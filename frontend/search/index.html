@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="custom-modal">
+    <div class="iframe-holder">
+      <iframe id="target-iframe" src=""></iframe>
+    </div>
+  </div>
+  <main>
+    <h2>Simple Medical and Chemical Dictionary</h2>
+    <div class="search-form">
+      <input type="search" id="search-input" placeholder="Start searching..." />
+      <button onclick="handleSearch()">Search</button>
+    </div>
+    <div class="container">
+      <div class="search-results">
+  
+      </div>
+      <div id="resultcon" class="result-container">
+        <div class="word-results">
+
+        </div>
+        <div class="youtube-results">
+
+        </div>
+      </div>
+      
+    </div>
+  </main>
+  <script src="script.js"></script>
+  <script src="voices.js"></script>
+</body>
+</html>
